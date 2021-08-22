@@ -8,7 +8,6 @@
 import UIKit
 import SnapKit
 
-//Degegator
 // Pri sozdanii objekta nuzno ponyat budet li nasledovat etot object
 // Esli NET nasledovanya - final - zapreswaet nasledovanie classa. + Bystree rabotajet. ne sozdaet dop mesto v pamayti
 //Lazy stavitsya pered var, init proischodit tolko kogda nuzno, kogda obrawaemsya k peremennoj
@@ -43,7 +42,6 @@ extension NewThemeViewController {
         if textFieldForTitle.text != "" {
             let theme = Themes(name: textFieldForTitle.text, color: .blue, id: "5")
             viewModel?.addNewTheme(theme: theme)
-            //let _ = UIStoryboard(name: "Main", bundle: nil) //storyboard
             let vc = storyboard?.instantiateViewController(withIdentifier: "ThemeViewController") as! ThemeViewController
             show(vc, sender: nil)
         }
