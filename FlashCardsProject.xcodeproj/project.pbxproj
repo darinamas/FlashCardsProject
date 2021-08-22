@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F78FD4C738F8EFB868FCA68 /* Pods_FlashCardsProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87A65B4C7BDAA4347D7578AA /* Pods_FlashCardsProject.framework */; };
 		440E018326AF53A4005F17FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440E018226AF53A4005F17FD /* AppDelegate.swift */; };
 		440E018526AF53A4005F17FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440E018426AF53A4005F17FD /* SceneDelegate.swift */; };
 		440E018726AF53A4005F17FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440E018626AF53A4005F17FD /* ViewController.swift */; };
@@ -14,9 +15,29 @@
 		440E018D26AF53A4005F17FD /* FlashCardsProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 440E018B26AF53A4005F17FD /* FlashCardsProject.xcdatamodeld */; };
 		440E018F26AF53A6005F17FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 440E018E26AF53A6005F17FD /* Assets.xcassets */; };
 		440E019226AF53A6005F17FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 440E019026AF53A6005F17FD /* LaunchScreen.storyboard */; };
+		440E01A626AF5831005F17FD /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440E01A526AF5831005F17FD /* CardTableViewCell.swift */; };
+		440E01A826AF587D005F17FD /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440E01A726AF587D005F17FD /* Models.swift */; };
+		440E01AB26AF590D005F17FD /* FakeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440E01AA26AF590D005F17FD /* FakeService.swift */; };
+		440E01AF26AF5D07005F17FD /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440E01AE26AF5D07005F17FD /* MainViewModel.swift */; };
+		440E01D726B01A8B005F17FD /* HomeViewViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440E01D626B01A8B005F17FD /* HomeViewViewModelType.swift */; };
+		440E01DB26B01ECB005F17FD /* TagsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440E01DA26B01ECB005F17FD /* TagsCollectionViewCell.swift */; };
+		44AF7E9626B0597C00A130A5 /* Constans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AF7E9526B0597C00A130A5 /* Constans.swift */; };
+		44AF7E9826B05EB800A130A5 /* DefaultReuseIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AF7E9726B05EB800A130A5 /* DefaultReuseIdentifiable.swift */; };
+		44B8D00726B439FE000F4439 /* SingleTon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B8D00626B439FE000F4439 /* SingleTon.swift */; };
+		44B8D00926B442D6000F4439 /* NewCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B8D00826B442D6000F4439 /* NewCardViewController.swift */; };
+		44B8D00B26B4452A000F4439 /* NewCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B8D00A26B4452A000F4439 /* NewCardViewModel.swift */; };
+		44B8D00D26B44E8F000F4439 /* NewCardViewViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B8D00C26B44E8F000F4439 /* NewCardViewViewModelType.swift */; };
+		44B94E4526B54D6A001F12BC /* ThemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B94E4426B54D6A001F12BC /* ThemeViewController.swift */; };
+		44B94E4726B54D9A001F12BC /* ThemeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B94E4626B54D9A001F12BC /* ThemeViewModel.swift */; };
+		44B94E4A26B55886001F12BC /* NewThemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B94E4926B55886001F12BC /* NewThemeViewController.swift */; };
+		44B94E5026B5625E001F12BC /* NewThemeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B94E4F26B5625E001F12BC /* NewThemeViewModel.swift */; };
+		44B94E5426B562FA001F12BC /* ThemeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B94E5326B562FA001F12BC /* ThemeTableViewCell.swift */; };
+		44B94E5626B56E5D001F12BC /* ThemeViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B94E5526B56E5D001F12BC /* ThemeViewModelType.swift */; };
+		44B94E5826B56FD9001F12BC /* NewThemeViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B94E5726B56FD9001F12BC /* NewThemeViewModelType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B409762FC760F7A5F580D27 /* Pods-FlashCardsProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlashCardsProject.release.xcconfig"; path = "Target Support Files/Pods-FlashCardsProject/Pods-FlashCardsProject.release.xcconfig"; sourceTree = "<group>"; };
 		440E017F26AF53A4005F17FD /* FlashCardsProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlashCardsProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		440E018226AF53A4005F17FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		440E018426AF53A4005F17FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +47,27 @@
 		440E018E26AF53A6005F17FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		440E019126AF53A6005F17FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		440E019326AF53A6005F17FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		440E01A526AF5831005F17FD /* CardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
+		440E01A726AF587D005F17FD /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		440E01AA26AF590D005F17FD /* FakeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeService.swift; sourceTree = "<group>"; };
+		440E01AE26AF5D07005F17FD /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		440E01D626B01A8B005F17FD /* HomeViewViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewViewModelType.swift; sourceTree = "<group>"; };
+		440E01DA26B01ECB005F17FD /* TagsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsCollectionViewCell.swift; sourceTree = "<group>"; };
+		44AF7E9526B0597C00A130A5 /* Constans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constans.swift; sourceTree = "<group>"; };
+		44AF7E9726B05EB800A130A5 /* DefaultReuseIdentifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultReuseIdentifiable.swift; sourceTree = "<group>"; };
+		44B8D00626B439FE000F4439 /* SingleTon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleTon.swift; sourceTree = "<group>"; };
+		44B8D00826B442D6000F4439 /* NewCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCardViewController.swift; sourceTree = "<group>"; };
+		44B8D00A26B4452A000F4439 /* NewCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCardViewModel.swift; sourceTree = "<group>"; };
+		44B8D00C26B44E8F000F4439 /* NewCardViewViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCardViewViewModelType.swift; sourceTree = "<group>"; };
+		44B94E4426B54D6A001F12BC /* ThemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeViewController.swift; sourceTree = "<group>"; };
+		44B94E4626B54D9A001F12BC /* ThemeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeViewModel.swift; sourceTree = "<group>"; };
+		44B94E4926B55886001F12BC /* NewThemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewThemeViewController.swift; sourceTree = "<group>"; };
+		44B94E4F26B5625E001F12BC /* NewThemeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewThemeViewModel.swift; sourceTree = "<group>"; };
+		44B94E5326B562FA001F12BC /* ThemeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeTableViewCell.swift; sourceTree = "<group>"; };
+		44B94E5526B56E5D001F12BC /* ThemeViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeViewModelType.swift; sourceTree = "<group>"; };
+		44B94E5726B56FD9001F12BC /* NewThemeViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewThemeViewModelType.swift; sourceTree = "<group>"; };
+		87A65B4C7BDAA4347D7578AA /* Pods_FlashCardsProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlashCardsProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D274ACF104DDE15F373B1BA8 /* Pods-FlashCardsProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlashCardsProject.debug.xcconfig"; path = "Target Support Files/Pods-FlashCardsProject/Pods-FlashCardsProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F78FD4C738F8EFB868FCA68 /* Pods_FlashCardsProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +87,8 @@
 			children = (
 				440E018126AF53A4005F17FD /* FlashCardsProject */,
 				440E018026AF53A4005F17FD /* Products */,
+				7E0BEC210F57DCF7FF83FE49 /* Pods */,
+				79CA76868D1C5EE46564448C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,14 +105,220 @@
 			children = (
 				440E018226AF53A4005F17FD /* AppDelegate.swift */,
 				440E018426AF53A4005F17FD /* SceneDelegate.swift */,
-				440E018626AF53A4005F17FD /* ViewController.swift */,
-				440E018826AF53A4005F17FD /* Main.storyboard */,
+				440E019A26AF53F2005F17FD /* Moduls */,
+				440E019926AF53E3005F17FD /* Storyboard */,
 				440E018E26AF53A6005F17FD /* Assets.xcassets */,
 				440E019026AF53A6005F17FD /* LaunchScreen.storyboard */,
 				440E019326AF53A6005F17FD /* Info.plist */,
 				440E018B26AF53A4005F17FD /* FlashCardsProject.xcdatamodeld */,
 			);
 			path = FlashCardsProject;
+			sourceTree = "<group>";
+		};
+		440E019926AF53E3005F17FD /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				440E018826AF53A4005F17FD /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		440E019A26AF53F2005F17FD /* Moduls */ = {
+			isa = PBXGroup;
+			children = (
+				44AF7E9426B0596D00A130A5 /* Constans */,
+				440E01A926AF58DF005F17FD /* Service */,
+				440E01D526B01A5F005F17FD /* Protocols */,
+				440E019B26AF53FC005F17FD /* Model */,
+				440E019C26AF5404005F17FD /* ViewModel */,
+				440E019D26AF5474005F17FD /* View */,
+			);
+			path = Moduls;
+			sourceTree = "<group>";
+		};
+		440E019B26AF53FC005F17FD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				440E01A426AF550F005F17FD /* Home */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		440E019C26AF5404005F17FD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				440E01A326AF54FE005F17FD /* Home */,
+				440E01E026B022DD005F17FD /* New Card */,
+				44B94E4B26B561D1001F12BC /* Select Theme */,
+				44B94E4C26B561F3001F12BC /* New Theme */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		440E019D26AF5474005F17FD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				440E019E26AF5498005F17FD /* Home */,
+				440E01E126B022F6005F17FD /* New Card */,
+				44B94E4326B54D39001F12BC /* Select Theme */,
+				44B94E4826B5585F001F12BC /* New Theme */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		440E019E26AF5498005F17FD /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				440E019F26AF54A4005F17FD /* MainViewController */,
+				440E01A026AF54B5005F17FD /* Cell */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		440E019F26AF54A4005F17FD /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				440E018626AF53A4005F17FD /* ViewController.swift */,
+			);
+			path = MainViewController;
+			sourceTree = "<group>";
+		};
+		440E01A026AF54B5005F17FD /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				440E01A526AF5831005F17FD /* CardTableViewCell.swift */,
+				440E01DA26B01ECB005F17FD /* TagsCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		440E01A326AF54FE005F17FD /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				440E01AE26AF5D07005F17FD /* MainViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		440E01A426AF550F005F17FD /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				440E01A726AF587D005F17FD /* Models.swift */,
+				44B8D00626B439FE000F4439 /* SingleTon.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		440E01A926AF58DF005F17FD /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				440E01AA26AF590D005F17FD /* FakeService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		440E01D526B01A5F005F17FD /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				440E01D626B01A8B005F17FD /* HomeViewViewModelType.swift */,
+				44AF7E9726B05EB800A130A5 /* DefaultReuseIdentifiable.swift */,
+				44B8D00C26B44E8F000F4439 /* NewCardViewViewModelType.swift */,
+				44B94E5526B56E5D001F12BC /* ThemeViewModelType.swift */,
+				44B94E5726B56FD9001F12BC /* NewThemeViewModelType.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		440E01E026B022DD005F17FD /* New Card */ = {
+			isa = PBXGroup;
+			children = (
+				44B8D00A26B4452A000F4439 /* NewCardViewModel.swift */,
+			);
+			name = "New Card";
+			path = "../View/New Card";
+			sourceTree = "<group>";
+		};
+		440E01E126B022F6005F17FD /* New Card */ = {
+			isa = PBXGroup;
+			children = (
+				44B8D00826B442D6000F4439 /* NewCardViewController.swift */,
+			);
+			name = "New Card";
+			path = "FlashCardsProject/Moduls/ViewModel/New Card";
+			sourceTree = SOURCE_ROOT;
+		};
+		44AF7E9426B0596D00A130A5 /* Constans */ = {
+			isa = PBXGroup;
+			children = (
+				44AF7E9526B0597C00A130A5 /* Constans.swift */,
+			);
+			path = Constans;
+			sourceTree = "<group>";
+		};
+		44B94E4326B54D39001F12BC /* Select Theme */ = {
+			isa = PBXGroup;
+			children = (
+				44B94E5126B562AC001F12BC /* Select Theme ViewController */,
+				44B94E5226B562CE001F12BC /* Cell */,
+			);
+			path = "Select Theme";
+			sourceTree = "<group>";
+		};
+		44B94E4826B5585F001F12BC /* New Theme */ = {
+			isa = PBXGroup;
+			children = (
+				44B94E4926B55886001F12BC /* NewThemeViewController.swift */,
+			);
+			path = "New Theme";
+			sourceTree = "<group>";
+		};
+		44B94E4B26B561D1001F12BC /* Select Theme */ = {
+			isa = PBXGroup;
+			children = (
+				44B94E4626B54D9A001F12BC /* ThemeViewModel.swift */,
+			);
+			path = "Select Theme";
+			sourceTree = "<group>";
+		};
+		44B94E4C26B561F3001F12BC /* New Theme */ = {
+			isa = PBXGroup;
+			children = (
+				44B94E4F26B5625E001F12BC /* NewThemeViewModel.swift */,
+			);
+			path = "New Theme";
+			sourceTree = "<group>";
+		};
+		44B94E5126B562AC001F12BC /* Select Theme ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				44B94E4426B54D6A001F12BC /* ThemeViewController.swift */,
+			);
+			path = "Select Theme ViewController";
+			sourceTree = "<group>";
+		};
+		44B94E5226B562CE001F12BC /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				44B94E5326B562FA001F12BC /* ThemeTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		79CA76868D1C5EE46564448C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				87A65B4C7BDAA4347D7578AA /* Pods_FlashCardsProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7E0BEC210F57DCF7FF83FE49 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D274ACF104DDE15F373B1BA8 /* Pods-FlashCardsProject.debug.xcconfig */,
+				0B409762FC760F7A5F580D27 /* Pods-FlashCardsProject.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +328,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 440E019626AF53A6005F17FD /* Build configuration list for PBXNativeTarget "FlashCardsProject" */;
 			buildPhases = (
+				9BF85E47DD8D39CA946DAEA1 /* [CP] Check Pods Manifest.lock */,
 				440E017B26AF53A4005F17FD /* Sources */,
 				440E017C26AF53A4005F17FD /* Frameworks */,
 				440E017D26AF53A4005F17FD /* Resources */,
+				154F317A391A1931EDD970A2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,15 +388,76 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		154F317A391A1931EDD970A2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlashCardsProject/Pods-FlashCardsProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlashCardsProject/Pods-FlashCardsProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlashCardsProject/Pods-FlashCardsProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9BF85E47DD8D39CA946DAEA1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlashCardsProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		440E017B26AF53A4005F17FD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44AF7E9826B05EB800A130A5 /* DefaultReuseIdentifiable.swift in Sources */,
+				44AF7E9626B0597C00A130A5 /* Constans.swift in Sources */,
+				440E01DB26B01ECB005F17FD /* TagsCollectionViewCell.swift in Sources */,
+				440E01A626AF5831005F17FD /* CardTableViewCell.swift in Sources */,
+				44B94E4726B54D9A001F12BC /* ThemeViewModel.swift in Sources */,
+				440E01D726B01A8B005F17FD /* HomeViewViewModelType.swift in Sources */,
+				44B8D00B26B4452A000F4439 /* NewCardViewModel.swift in Sources */,
+				44B94E5826B56FD9001F12BC /* NewThemeViewModelType.swift in Sources */,
+				44B8D00D26B44E8F000F4439 /* NewCardViewViewModelType.swift in Sources */,
 				440E018D26AF53A4005F17FD /* FlashCardsProject.xcdatamodeld in Sources */,
 				440E018726AF53A4005F17FD /* ViewController.swift in Sources */,
+				44B8D00926B442D6000F4439 /* NewCardViewController.swift in Sources */,
+				440E01A826AF587D005F17FD /* Models.swift in Sources */,
+				44B94E4526B54D6A001F12BC /* ThemeViewController.swift in Sources */,
+				440E01AB26AF590D005F17FD /* FakeService.swift in Sources */,
+				44B94E5626B56E5D001F12BC /* ThemeViewModelType.swift in Sources */,
 				440E018326AF53A4005F17FD /* AppDelegate.swift in Sources */,
 				440E018526AF53A4005F17FD /* SceneDelegate.swift in Sources */,
+				44B8D00726B439FE000F4439 /* SingleTon.swift in Sources */,
+				44B94E4A26B55886001F12BC /* NewThemeViewController.swift in Sources */,
+				44B94E5026B5625E001F12BC /* NewThemeViewModel.swift in Sources */,
+				440E01AF26AF5D07005F17FD /* MainViewModel.swift in Sources */,
+				44B94E5426B562FA001F12BC /* ThemeTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +601,7 @@
 		};
 		440E019726AF53A6005F17FD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D274ACF104DDE15F373B1BA8 /* Pods-FlashCardsProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -306,6 +621,7 @@
 		};
 		440E019826AF53A6005F17FD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B409762FC760F7A5F580D27 /* Pods-FlashCardsProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
