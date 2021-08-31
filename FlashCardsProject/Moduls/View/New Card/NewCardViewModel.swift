@@ -7,12 +7,20 @@
 
 import Foundation
 
+protocol NewCardViewModelDelegate: AnyObject {
+    func a()
+}
+
 class NewCardViewModel: NewCardViewViewModelType {
+    
+    weak var delegate: NewCardViewModelDelegate?
     
     func addNewCard(card: Cards) {
         SingleTon.shared.cards.append(card)
     }
     
-    
+    func callA() {
+        delegate?.a()
+    }
    
 }

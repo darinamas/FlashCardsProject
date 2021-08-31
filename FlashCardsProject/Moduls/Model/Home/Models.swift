@@ -8,17 +8,18 @@
 import Foundation
 
 struct Cards {
-    let question: String?
-    let answer: String?
+    var question: String?
+    var answer: String?
     let id: String
-    let tag: Themes
+    var tag: Themes
+    var wasEdit: Bool
     
 }
 
 struct Themes {
-    let name: String
-    let color: Colors
-    let id: String
+    var name: String
+    var color: Colors
+    var id: String
     
     enum Colors {
         case green

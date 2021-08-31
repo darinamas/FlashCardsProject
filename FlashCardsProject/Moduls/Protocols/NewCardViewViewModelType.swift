@@ -9,4 +9,5 @@ import Foundation
 
 protocol NewCardViewViewModelType {
     func addNewCard(card: Cards)
+    var delegate: NewCardViewModelDelegate? { get set }
 }

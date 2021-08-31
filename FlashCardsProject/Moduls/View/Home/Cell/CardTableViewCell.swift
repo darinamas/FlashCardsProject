@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class CardTableViewCell: UITableViewCell {
+final class CardTableViewCell: UITableViewCell {
     
     let mainView: UIView = {
         let view = UIView()
@@ -37,10 +37,7 @@ class CardTableViewCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
-        addSubview(mainView)
-        mainView.addSubview(viewForCell)
-        viewForCell.addSubview(labelTitle)
-
+        addSubViews()
         runSnapKitLayout()
     
     }
@@ -49,10 +46,18 @@ class CardTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+//MARK: Added subviews
+    
+    private func addSubViews() {
+        addSubview(mainView)
+        mainView.addSubview(viewForCell)
+        viewForCell.addSubview(labelTitle)
+    }
     
 //MARK: SnapKit AutoLayout
-    func  runSnapKitLayout() {
-        
+    
+   private func runSnapKitLayout() {
+
         mainView.snp.makeConstraints { (make) in
             make.edges.equalToSuperview()
 

@@ -8,7 +8,7 @@
 import UIKit
 // Делегатор
 // Primajet dannye
-class MainViewController: UIViewController {
+final class MainViewController: UIViewController {
     
     var viewModel: HomeViewViewModelType? //WEAK??   delegat, protocol dlya TB
     
@@ -41,6 +41,8 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate, UIColl
     @IBAction func addNewCard(_ sender: Any) {
         let sb = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard?.instantiateViewController(withIdentifier: "NewCardViewController") as! NewCardViewController
+        SingleTon.shared.editFlag = false
+        
         show(vc, sender: nil)
     }
     
@@ -54,6 +56,18 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate, UIColl
         cell.labelTitle.text = SingleTon.shared.cards[indexPath.row].question
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard?.instantiateViewController(withIdentifier: "NewCardViewController") as! NewCardViewController
+        SingleTon.shared.cards[indexPath.row].wasEdit = true
+        vc.textForEditQuestion = SingleTon.shared.cards[indexPath.row].question!
+        vc.textForEditAnswer = SingleTon.shared.cards[indexPath.row].answer!
+        vc.indexPathForEdit = indexPath.row
+        SingleTon.shared.editFlag = true
+        
+        show(vc, sender: nil)
     }
     
     private func setTableView() {
@@ -116,8 +130,9 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate, UIColl
     }
 }
 
-extension MainViewController: MainViewModelDelegate { //realizujet func Protocola  MainViewModelDelegate
+extension MainViewController: MainViewModelDelegate {
     
+    //realizujet func Protocola  MainViewModelDelegate
     func showAlert() {
         let alert = UIAlertController(title: "Did you bring your towel?", message: "It's recommended you bring your towel before continuing.", preferredStyle: .alert)
         
@@ -125,6 +140,7 @@ extension MainViewController: MainViewModelDelegate { //realizujet func Protocol
         alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))
         
         self.present(alert, animated: true)
+        
     }
     
 }

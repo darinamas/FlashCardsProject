@@ -6,8 +6,8 @@
 //
 
 import UIKit
-//Degegator
-class NewCardViewController: UIViewController {
+
+final class NewCardViewController: UIViewController {
     
     private var viewModel: NewCardViewViewModelType?  //protocol
     
@@ -24,12 +24,15 @@ class NewCardViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewModel = NewCardViewModel() //delegat
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Save", style: .done, target: self, action: #selector(addTapped))
-        self.addThemeButton.addTarget(self, action: #selector(addNewTheme), for: .touchUpInside)
+        self.viewModel = NewCardViewModel() //delegat
+        viewModel?.delegate = self
+        
+        setNavigationContorller()
         addSubviews ()
         runSnapKitLayout()
         showText()
+        
+        print(SingleTon.shared.editFlag)
     }
     
 }
@@ -37,29 +40,52 @@ class NewCardViewController: UIViewController {
 
 extension NewCardViewController {
     
+    func setNavigationContorller() {
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Save", style: .done, target: self, action: #selector(saveBtn))
+        self.addThemeButton.addTarget(self, action: #selector(addNewTheme), for: .touchUpInside)
+    }
+    
+    
     //MARK: 'Add Theme' Btn action
+    
     @objc func addNewTheme() {
         let sb = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard?.instantiateViewController(withIdentifier: "ThemeViewController") as! ThemeViewController
         show(vc, sender: nil)
     }
     
-    //MARR: 'Save btn' action
-    @objc func addTapped(sender: UIBarButtonItem) {
+    //MARK: 'Save btn' action
+    
+    @objc func saveBtn(sender: UIBarButtonItem) {
+        SingleTon.shared.editFlag == true ? saveEditedCard() : saveNewCard()
+        
+    }
+    
+    func saveEditedCard() {
+        SingleTon.shared.cards[indexPathForEdit].question = textFieldForQuestion.text
+        SingleTon.shared.cards[indexPathForEdit].answer = textFieldForAnswer.text
+        
+        showMainVC()
+    }
+    
+    func saveNewCard()  {
         if textFieldForQuestion.text != "" && textFieldForAnswer.text != "" {
             let card = Cards(question: textFieldForQuestion.text,
                              answer: textFieldForAnswer.text,
                              id:"45",
-                             tag: Themes(name: "Dev", color: .blue, id: "45")
+                             tag: Themes(name: "Dev", color: .blue, id: "45"),
+                             wasEdit: false
             )
             
             viewModel?.addNewCard(card: card)
            
-            navigationController?.popViewController(animated: true)
+            showMainVC()
         }
-        
     }
     
+    private func showMainVC() {
+        navigationController?.popViewController(animated: true)
+    }
     private func showText() {
         textFieldForQuestion.text = textForEditQuestion
         textFieldForAnswer.text = textForEditAnswer
@@ -140,3 +166,9 @@ extension NewCardViewController {
     
 }
 
+extension NewCardViewController: NewCardViewModelDelegate {
+    
+    func a() {
+        print("a")
+    }
+}
